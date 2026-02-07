@@ -26,7 +26,7 @@ plt.title("Training Data")
 plt.grid(True)
 plt.show()
 knn=KNeighborsClassifier(n_neighbors=3)
-knn.fit(train_data, y_train)
+knn.fit(labels, y_train)
 x_test=np.arange(0, 10, 0.1)
 y_test=np.arange(0, 10, 0.1)
 
@@ -47,3 +47,4 @@ plt.ylabel("Feature Y")
 plt.title("kNN Classification (k=3) – Decision Boundary")
 plt.grid(True)
 plt.show()
+
